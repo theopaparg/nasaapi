@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("Images/background.jpg");
+  overflow-x: hidden;
+  font-family: Calibri, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.navigation-container {
+  background: white;
+}
+
+.navigation-items {
+  display: flex;
+  justify-content: center;
+}
+
+.clickable {
+  color: dodgerblue;
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickable:hover {
+  color: rgb(0, 99, 199);
+}
+
+.images-container {
+  width: 800px;
+}
+
+.card {
+  background: white;
+  margin: 10px 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  padding: 2rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  margin: 10px auto;
+  font-size: 24px;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Large Smartphone (Vertical) */
+@media screen and (max-width: 800px) {
+  body {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .images-container {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .save-confirmed {
+    right: 25px;
+  }
+}
